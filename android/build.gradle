@@ -2,13 +2,15 @@ group 'com.gbwisx.msal_mobile'
 version '1.0'
 
 buildscript {
+    ext.kotlin_version = '1.4.31'
+
     repositories {
         google()
         jcenter()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.0'
+        classpath 'com.android.tools.build:gradle:4.1.2'
     }
 }
 
@@ -16,16 +18,24 @@ rootProject.allprojects {
     repositories {
         google()
         jcenter()
+        mavenCentral()
+
+        maven {
+            url 'https://pkgs.dev.azure.com/MicrosoftDeviceSDK/DuoSDK-Public/_packaging/Duo-SDK-Feed%40Local/maven/v1'
+        }
     }
 }
 
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 28
-
+    compileSdkVersion 30
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 21
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
@@ -35,13 +45,11 @@ android {
 
 dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
-    if (findProject(':msal') != null) {
-        // For developer team only.
-        localImplementation project(':msal')
-        externalImplementation 'com.microsoft.identity.client:msal:1.0.+'
-    }
-    else {
-        // Downloads and Builds MSAL from maven central.
-        implementation 'com.microsoft.identity.client:msal:1.0.+'
-    }
+    implementation 'com.microsoft.identity.client:msal:2.+'
+    implementation "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+}
+repositories {
+    mavenCentral()
 }

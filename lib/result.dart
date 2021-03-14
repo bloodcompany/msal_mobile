@@ -2,9 +2,9 @@ import 'exception.dart';
 import 'payload.dart';
 
 class MsalMobileResult {
-  final bool isSuccess;
-  final MsalMobileException exception;
-  final MsalMobileException innerException;
+  final bool? isSuccess;
+  final MsalMobileException? exception;
+  final MsalMobileException? innerException;
 
   MsalMobileResult({this.isSuccess, this.exception, this.innerException});
 
@@ -21,10 +21,10 @@ class MsalMobileResult {
 }
 
 class MsalMobileGetAccountResult implements MsalMobileResult {
-  final bool isSuccess;
-  final MsalMobileGetAccountResultPayload payload;
-  final MsalMobileException exception;
-  final MsalMobileException innerException;
+  final bool? isSuccess;
+  final MsalMobileGetAccountResultPayload? payload;
+  final MsalMobileException? exception;
+  final MsalMobileException? innerException;
 
   MsalMobileGetAccountResult.fromJson(Map<String, dynamic> json)
       : isSuccess = json['isSuccess'],
@@ -43,11 +43,11 @@ class MsalMobileGetAccountResult implements MsalMobileResult {
 }
 
 class MsalMobileAuthenticationResult implements MsalMobileResult {
-  final bool isSuccess;
-  final MsalMobileAuthenticationResultPayload payload;
-  final MsalMobileException exception;
-  final MsalMobileException innerException;
-  final bool isUiRequired;
+  final bool? isSuccess;
+  final MsalMobileAuthenticationResultPayload? payload;
+  final MsalMobileException? exception;
+  final MsalMobileException? innerException;
+  final bool? isUiRequired;
 
   MsalMobileAuthenticationResult.fromJson(Map<String, dynamic> json)
       : isSuccess = json['isSuccess'],

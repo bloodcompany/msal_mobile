@@ -19,7 +19,7 @@ class Authenticator {
         guard let vc = viewController else { throw MsalMobileException(code: "no_view_controller", message: "No view controller was provided.") }
         
         self.viewController = vc
-        self.webViewParameters = MSALWebviewParameters(parentViewController: vc)
+        self.webViewParameters = MSALWebviewParameters(authPresentationViewController: vc)
         
         // get some settings from the auth config file (like client id)
         var clientId:String = ""
@@ -59,7 +59,16 @@ class Authenticator {
     
     public func signOut() throws {
         if let currentAccount = try getAccount() {
-            try client.remove(currentAccount)
+            let signoutParameters = MSALSignoutParameters(webviewParameters: self.webViewParameters)
+               signoutParameters.signoutFromBrowser = true // set this to true if you also want to signout from browser or webview
+            client.signout(with: currentAccount, signoutParameters: signoutParameters, completionBlock:({s,e in
+                if let e = e {
+                                   print( "Couldn't sign out account with error: \(e)")
+                                   return
+                               }
+                
+                
+            }))
         }
     }
     

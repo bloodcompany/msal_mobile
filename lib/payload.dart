@@ -3,8 +3,8 @@ import 'package:msal_mobile/account.dart';
 class MsalMobileResultPayload {}
 
 class MsalMobileGetAccountResultPayload extends MsalMobileResultPayload {
-  final MsalMobileAccount currentAccount;
-  final bool accountLoaded;
+  final MsalMobileAccount? currentAccount;
+  final bool? accountLoaded;
 
   MsalMobileGetAccountResultPayload.fromJson(Map<String, dynamic> json)
       : currentAccount = json['currentAccount'] != null
@@ -15,12 +15,12 @@ class MsalMobileGetAccountResultPayload extends MsalMobileResultPayload {
 }
 
 class MsalMobileAuthenticationResultPayload extends MsalMobileResultPayload {
-  final bool cancelled;
-  final bool success;
-  final String accessToken;
-  final String tenantId;
-  final List<dynamic> scope;
-  final String expiresOn;
+  final bool? cancelled;
+  final bool? success;
+  final String? accessToken;
+  final String? tenantId;
+  final List<dynamic>? scope;
+  final String? expiresOn;
 
   MsalMobileAuthenticationResultPayload.fromJson(Map<String, dynamic> json)
       : cancelled = json['cancelled'],
@@ -28,7 +28,7 @@ class MsalMobileAuthenticationResultPayload extends MsalMobileResultPayload {
         accessToken = json['accessToken'],
         tenantId = json['tenantId'],
         scope = json['scope'] != null
-            ? json['scope'] as List<dynamic>
-            : List<dynamic>(),
+            ? json['scope'] as List<dynamic>?
+            : List.empty(),
         expiresOn = json['expiresOn'] != null ? json['expiresOn'] : null;
 }
