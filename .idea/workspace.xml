@@ -19,43 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa01484f-089e-4cf4-9d55-21330d67386d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/gbwisx/msal_mobile/AuthMethodHandler.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/gbwisx/msal_mobile/Authenticator.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/gbwisx/msal_mobile/AuthenticatorInitCallback.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/gbwisx/msal_mobile/MsalMobileException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/gbwisx/msal_mobile/MsalMobilePlugin.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/gbwisx/msal_mobile/Payloads.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/gbwisx/msal_mobile/Results.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_for_Android.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_for_Android.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/gbwisx/msal_mobile/AuthMethodHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/gbwisx/msal_mobile/Authenticator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/gbwisx/msal_mobile/AuthenticatorInitCallback.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/gbwisx/msal_mobile/MsalMobileException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/gbwisx/msal_mobile/MsalMobilePlugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/gbwisx/msal_mobile/Payloads.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/gbwisx/msal_mobile/Results.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Podfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Podfile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/Authenticator.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/Authenticator.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/msal_mobile.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/ios/msal_mobile.podspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/account.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/account.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/exception.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/exception.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/msal_mobile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/msal_mobile.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/payload.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/payload.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/result.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/result.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msal_mobile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/msal_mobile.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="aa01484f-089e-4cf4-9d55-21330d67386d" name="Default Changelist" comment="update dependency, migrate null safety, covert kotlin, fix ios sign out" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,6 +50,14 @@
       <option name="presentableId" value="Default" />
       <updated>1615714060469</updated>
     </task>
+    <task id="LOCAL-00001" summary="update dependency, migrate null safety, covert kotlin, fix ios sign out">
+      <created>1615749075461</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615749075461</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,6 +71,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update dependency, migrate null safety, covert kotlin, fix ios sign out" />
+    <option name="LAST_COMMIT_MESSAGE" value="update dependency, migrate null safety, covert kotlin, fix ios sign out" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1629" height="238" key="GridCell.Tab.0.bottom" timestamp="1615737307555">
@@ -125,5 +101,9 @@
     <state width="1629" height="238" key="GridCell.Tab.0.right/-1920.25.1920.1055/0.25.1920.931@0.25.1920.931" timestamp="1615715227911" />
     <state width="1629" height="238" key="GridCell.Tab.0.right/-1920.25.1920.1055/0.25.1920.933@0.25.1920.933" timestamp="1615719768759" />
     <state width="1629" height="238" key="GridCell.Tab.0.right/-1920.25.1920.1055/0.25.1920.943@0.25.1920.943" timestamp="1615737307555" />
+    <state x="498" y="241" key="Vcs.Push.Dialog.v2" timestamp="1615749083200">
+      <screen x="0" y="25" width="1920" height="938" />
+    </state>
+    <state x="498" y="241" key="Vcs.Push.Dialog.v2/-1920.25.1920.1055/0.25.1920.938@0.25.1920.938" timestamp="1615749083200" />
   </component>
 </project>

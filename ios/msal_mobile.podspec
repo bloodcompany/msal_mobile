@@ -17,6 +17,8 @@ A new flutter plugin project.
   s.dependency 'Flutter'
   s.dependency 'MSAL'
   s.platform = :ios, '10.0'
+  s.static_framework = true
+
 
 
   # Flutter.framework does not contain a i386 slice. Only x86_64 simulators are supported.
